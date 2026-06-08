@@ -5,6 +5,11 @@ app_description = "assignment"
 app_email = "nimisha@idesignmylife.net"
 app_license = "mit"
 
+doc_events = {
+    "Enrollment": {
+        "after_insert": "student_enrollment.student_enrollment.doctype.enrollment.enrollment.after_insert"
+    }
+}
 # Apps
 # ------------------
 

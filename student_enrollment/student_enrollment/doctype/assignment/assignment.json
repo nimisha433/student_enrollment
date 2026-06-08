@@ -1,19 +1,19 @@
 {
  "actions": [],
  "allow_rename": 1,
- "creation": "2026-06-05 08:27:12.137517",
+ "creation": "2026-06-05 12:48:56.150312",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
-  "student",
   "course",
-  "course_fee",
   "semester",
-  "registration_fee",
-  "total_fee"
+  "student",
+  "assignment_employees",
+  "assignment_details"
  ],
  "fields": [
   {
+   "fetch_if_empty": 1,
    "fieldname": "student",
    "fieldtype": "Link",
    "label": "Student",
@@ -26,34 +26,34 @@
    "options": "Course"
   },
   {
-   "fetch_from": "course.course_fee",
-   "fieldname": "course_fee",
-   "fieldtype": "Currency",
-   "label": "Course Fee"
-  },
-  {
-   "fieldname": "registration_fee",
-   "fieldtype": "Currency",
-   "label": "Registration Fee"
-  },
-  {
-   "fieldname": "total_fee",
-   "fieldtype": "Currency",
-   "label": "Total Fee"
-  },
-  {
    "fieldname": "semester",
    "fieldtype": "Int",
    "label": "Semester"
+  },
+  {
+   "fieldname": "assignment_details",
+   "fieldtype": "Small Text",
+   "label": "Assignment Details"
+  },
+  {
+   "fieldname": "assignment_employees",
+   "fieldtype": "Table",
+   "label": "Assignment Employees",
+   "options": "TestEmployee"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
- "links": [],
- "modified": "2026-06-05 15:13:18.664979",
+ "links": [
+  {
+   "link_doctype": "ToDo",
+   "link_fieldname": "reference_name"
+  }
+ ],
+ "modified": "2026-06-06 13:48:14.634503",
  "modified_by": "Administrator",
  "module": "Student Enrollment",
- "name": "Enrollment",
+ "name": "Assignment",
  "owner": "Administrator",
  "permissions": [
   {

@@ -7,7 +7,9 @@
  "field_order": [
   "course_name",
   "course_fee",
-  "credits"
+  "credits",
+  "total_seats",
+  "available_seats"
  ],
  "fields": [
   {
@@ -24,12 +26,22 @@
    "fieldname": "credits",
    "fieldtype": "Int",
    "label": "Credits"
+  },
+  {
+   "fieldname": "total_seats",
+   "fieldtype": "Int",
+   "label": "Total Seats"
+  },
+  {
+   "fieldname": "available_seats",
+   "fieldtype": "Int",
+   "label": "Available Seats"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-06-05 08:26:49.175177",
+ "modified": "2026-06-05 16:11:18.154254",
  "modified_by": "Administrator",
  "module": "Student Enrollment",
  "name": "Course",

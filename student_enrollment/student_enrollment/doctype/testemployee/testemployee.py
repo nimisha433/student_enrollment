@@ -1,10 +1,9 @@
 # Copyright (c) 2026, Nimisha Verma and contributors
 # For license information, please see license.txt
 
-import frappe
+# import frappe
 from frappe.model.document import Document
 
-class Course(Document):
 
-    def before_insert(self):
-        self.available_seats = self.total_seats
+class TestEmployee(Document):
+	pass

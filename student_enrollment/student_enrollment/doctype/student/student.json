@@ -28,7 +28,7 @@
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-06-05 08:24:21.375989",
+ "modified": "2026-06-05 16:27:58.480599",
  "modified_by": "Administrator",
  "module": "Student Enrollment",
  "name": "Student",
@@ -53,6 +53,5 @@
  "sort_field": "modified",
  "sort_order": "DESC",
  "states": [],
- "title_field": "student_name",
- "translated_doctype": 1
+ "title_field": "student_name"
 }
