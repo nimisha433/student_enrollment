@@ -57,7 +57,7 @@
    "link_fieldname": "reference_name"
   }
  ],
- "modified": "2026-06-09 09:37:20.077266",
+ "modified": "2026-06-09 13:04:33.340760",
  "modified_by": "Administrator",
  "module": "Student Enrollment",
  "name": "Assignment",
@@ -74,6 +74,24 @@
    "role": "System Manager",
    "share": 1,
    "write": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Student",
+   "share": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Students",
+   "share": 1
   }
  ],
  "row_format": "Dynamic",
