@@ -6,6 +6,14 @@ from frappe.model.document import Document
 from frappe.model.mapper import get_mapped_doc
 
 class Assignment(Document):
+    def on_update(self):
+
+        if self.status == "Completed" and not self.grade:
+
+            frappe.enqueue(
+                "student_enrollment.assignment.assign_grade",
+                assignment_name=self.name
+            )
     def validate(self):
 
         enrolled = frappe.db.exists(

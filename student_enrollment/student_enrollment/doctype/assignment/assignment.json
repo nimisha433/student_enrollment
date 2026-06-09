@@ -9,7 +9,8 @@
   "semester",
   "student",
   "assignment_employees",
-  "assignment_details"
+  "assignment_details",
+  "status"
  ],
  "fields": [
   {
@@ -40,6 +41,12 @@
    "fieldtype": "Table",
    "label": "Assignment Employees",
    "options": "TestEmployee"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Open\nPending\nCompleted\nClose"
   }
  ],
  "grid_page_length": 50,
@@ -50,7 +57,7 @@
    "link_fieldname": "reference_name"
   }
  ],
- "modified": "2026-06-06 13:48:14.634503",
+ "modified": "2026-06-09 09:37:20.077266",
  "modified_by": "Administrator",
  "module": "Student Enrollment",
  "name": "Assignment",

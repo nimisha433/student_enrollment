@@ -7,7 +7,9 @@
   "student_name",
   "email",
   "phone_number",
-  "attendence_count"
+  "attendance_count",
+  "enrollment_date",
+  "status"
  ],
  "fields": [
   {
@@ -30,12 +32,22 @@
    "fieldname": "attendance_count",
    "fieldtype": "Int",
    "label": "Attendance Count"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Data",
+   "label": "Status"
+  },
+  {
+   "fieldname": "enrollment_date",
+   "fieldtype": "Date",
+   "label": "Enrollment Date"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-06-08 16:02:47.618552",
+ "modified": "2026-06-09 09:43:41.493707",
  "modified_by": "Administrator",
  "module": "Student Enrollment",
  "name": "Student",

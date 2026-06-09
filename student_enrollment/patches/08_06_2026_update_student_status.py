@@ -8,4 +8,4 @@ def execute():
         WHERE enrollment_date > '2025-01-01'
     """)
 
-frappe.db.commit()
+    frappe.db.commit()
