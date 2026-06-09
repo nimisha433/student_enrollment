@@ -6,7 +6,8 @@
  "field_order": [
   "student_name",
   "email",
-  "phone_number"
+  "phone_number",
+  "attendence_count"
  ],
  "fields": [
   {
@@ -23,12 +24,18 @@
    "fieldname": "phone_number",
    "fieldtype": "Phone",
    "label": "Phone Number"
+  },
+  {
+   "default": "0",
+   "fieldname": "attendance_count",
+   "fieldtype": "Int",
+   "label": "Attendance Count"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-06-05 16:27:58.480599",
+ "modified": "2026-06-08 16:02:47.618552",
  "modified_by": "Administrator",
  "module": "Student Enrollment",
  "name": "Student",

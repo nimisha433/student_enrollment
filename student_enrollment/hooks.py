@@ -10,6 +10,12 @@ doc_events = {
         "after_insert": "student_enrollment.student_enrollment.doctype.enrollment.enrollment.after_insert"
     }
 }
+
+scheduler_events = {
+    "daily": [
+        "student_enrollment.attendance.update_attendance_count"
+    ]
+}
 # Apps
 # ------------------
 
