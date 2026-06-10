@@ -10,7 +10,8 @@
   "course_fee",
   "semester",
   "registration_fee",
-  "total_fee"
+  "total_fee",
+  "amended_from"
  ],
  "fields": [
   {
@@ -45,12 +46,23 @@
    "fieldname": "semester",
    "fieldtype": "Int",
    "label": "Semester"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Enrollment",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
+ "is_submittable": 1,
  "links": [],
- "modified": "2026-06-09 10:56:26.945387",
+ "modified": "2026-06-09 22:24:19.929360",
  "modified_by": "Administrator",
  "module": "Student Enrollment",
  "name": "Enrollment",

@@ -11,6 +11,15 @@ scheduler_events = {
         "student_enrollment.attendance.update_attendance_count"
     ]
 }
+
+override_doctype_class = {
+    "ToDo": "student_enrollment.overrides.todo.CustomToDo"
+}
+
+doctype_js = {
+    "ToDo": "student_enrollment.public.js.todo"
+
+}
 # Apps
 # ------------------
 
