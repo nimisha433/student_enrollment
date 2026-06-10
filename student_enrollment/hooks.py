@@ -17,7 +17,7 @@ override_doctype_class = {
 }
 
 doctype_js = {
-    "ToDo": "student_enrollment.public.js.todo"
+    "ToDo": "public/js/todo.js"
 
 }
 # Apps
